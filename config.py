@@ -1,7 +1,10 @@
+"""Ghost admin access configuration."""
 from os import environ
 
 
 class Config:
+    """Ghost admin creds."""
+
     ghost_admin_api_key = environ.get('GHOST_ADMIN_API_KEY')
     ghost_admin_url = environ.get('GHOST_ADMIN_URL')
     ghost_admin_user = environ.get('GHOST_ADMIN_USER')
